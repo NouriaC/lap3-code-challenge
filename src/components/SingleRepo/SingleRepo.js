@@ -6,10 +6,10 @@ export default function SingleRepo({ repo }) {
     // const [showInfo, setShowInfo] = useState(false);
     return (
         <article className="repo">
-            <header>
-                <h4>{repo.name}</h4>
+            <div>
+                <h4 className="repo-name">{repo.name}</h4>
                 <button className="btn">See Details</button>
-            </header>
+            </div>
         </article>
     );
 }

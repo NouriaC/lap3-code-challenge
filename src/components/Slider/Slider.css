@@ -1,4 +1,9 @@
 .box {
-    margin: 10rem auto;
+    margin: 18rem auto;
     width: 80%;
+    background-color: #151515;
+    height: 350px;
+    border-radius: 24px;
+    display: grid;
+    color: #fff;
 }
