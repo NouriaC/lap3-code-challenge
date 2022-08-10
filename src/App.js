@@ -1,38 +1,17 @@
-import { useEffect, useState } from "react";
-import axios from "axios";
+import React from "react";
+import { Routes, Route } from "react-router-dom";
 import "./App.css";
-import GithubForm from "./components/GithubForm";
-import RepoList from "./components/RepoList/RepoList";
-import Slider from "./components/Slider/Slider";
+import * as Pages from "./pages";
 
 function App() {
-    const [input, setInput] = useState("");
-    const [username, setUsername] = useState("octocat");
-    const [repos, setRepos] = useState([]);
-
-    useEffect(() => {
-        const fetchGithubRepo = async () => {
-            const { data } = await axios.get(`https://api.github.com/users/${username}/repos`);
-            console.log(data);
-            setRepos(data);
-        };
-        fetchGithubRepo();
-    }, [username]);
-
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        setUsername(input);
-        setInput("");
-    };
-
-    return (
-        <div className="App">
-            <h2>Lap 3 Code Challenge</h2>
-            <GithubForm input={input} setInput={setInput} handleSubmit={handleSubmit} />
-            {/* <RepoList repos={repos} /> */}
-            <Slider repos={repos} />
-        </div>
-    );
+  return (
+    <div className="App">
+      <Routes>
+        <Route path="/" element={<Pages.Home />} />
+        <Route path="/:id" element={<Pages.Repo />} />
+      </Routes>
+    </div>
+  );
 }
 
 export default App;
