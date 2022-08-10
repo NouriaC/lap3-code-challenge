@@ -1,8 +1,16 @@
+.repo {
+    padding-inline: 10px;
+}
+
 .btn {
-    background-color: #9227c5;
+    background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
     border: none;
     color: #fff;
     padding: 8px 20px;
     border-radius: 20px;
     cursor: pointer;
+}
+
+.repo-name {
+    font-size: 1.3rem;
 }
