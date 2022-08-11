@@ -1,9 +1,11 @@
 .box {
-    margin: 18rem auto;
-    width: 80%;
-    background-color: #151515;
+    margin: 12rem auto;
+    width: 75%;
+    background-color: transparent;
     height: 350px;
     border-radius: 24px;
     display: grid;
     color: #fff;
+    box-shadow: -2px -2px 4px rgba(0, 0, 0, 0.4), 2px 2px 4px rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(8px);
 }
