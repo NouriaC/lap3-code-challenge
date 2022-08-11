@@ -11,4 +11,4 @@
 
 - Type your github username in the Homepage to get a list of your repos.
 - Click on the "See details" button to see the details of the repo.
-- Click on the "Back" button to check another repo.
+- Click on the "Back" button to go back to the Homepage.
