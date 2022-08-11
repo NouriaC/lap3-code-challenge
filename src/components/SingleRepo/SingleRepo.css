@@ -2,6 +2,12 @@
     padding-inline: 10px;
 }
 
+.repo-name {
+    font-size: 1.3rem;
+    margin-bottom: 25px;
+    overflow: hidden;
+}
+
 .btn {
     background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
     border: none;
@@ -9,9 +15,4 @@
     padding: 10px 20px;
     border-radius: 20px;
     cursor: pointer;
-}
-
-.repo-name {
-    font-size: 1.3rem;
-    margin-bottom: 25px;
 }
