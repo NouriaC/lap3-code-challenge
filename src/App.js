@@ -1,13 +1,15 @@
-import './App.css';
-
-let username;
-
-const url = `https://api.github.com/users/${username}/repos`;
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import "./App.css";
+import * as Pages from "./pages";
 
 function App() {
   return (
     <div className="App">
-    <h2>Lap 3 Code Challenge</h2>
+      <Routes>
+        <Route path="/" element={<Pages.Home />} />
+        <Route path="/:name" element={<Pages.Repo />} />
+      </Routes>
     </div>
   );
 }
