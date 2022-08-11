@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="/" element={<Pages.Home />} />
-        <Route path="/:id" element={<Pages.Repo />} />
+        <Route path="/:name" element={<Pages.Repo />} />
       </Routes>
     </div>
   );

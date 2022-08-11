@@ -1,12 +1,16 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import GithubForm from "../../components/GithubForm";
+import GithubForm from "../../components/GithubForm/GithubForm";
 import Slider from "../../components/Slider/Slider";
 
 const Homepage = () => {
   const [input, setInput] = useState("");
   const [username, setUsername] = useState("octocat");
   const [repos, setRepos] = useState([]);
+
+  useEffect(() => {
+    localStorage.setItem("username", JSON.stringify(username));
+  }, [username]);
 
   useEffect(() => {
     const fetchGithubRepo = async () => {
@@ -33,7 +37,6 @@ const Homepage = () => {
         setInput={setInput}
         handleSubmit={handleSubmit}
       />
-      {/* <RepoList repos={repos} /> */}
       <Slider repos={repos} />
     </div>
   );
