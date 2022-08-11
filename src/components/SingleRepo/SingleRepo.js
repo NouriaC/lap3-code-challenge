@@ -8,7 +8,7 @@ export default function SingleRepo({ repo }) {
             <header>
                 <h4 className="repo-name">{repo.name}</h4>
                 <Link to={`/${repo.name}`} className="btn">
-                    See Details
+                    See details
                 </Link>
             </header>
         </article>

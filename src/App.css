@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+}
+
 .App {
     text-align: center;
 }
@@ -57,4 +61,46 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+}
+
+.repoSection {
+    min-height: 100vh;
+    background-image: url("./assets/img/banner-bg.png");
+    padding-block: 50px;
+}
+
+.astro {
+    width: 350px;
+    animation: updown 3s linear infinite;
+}
+
+.inner-info-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.info {
+    margin: 3rem auto;
+    padding-top: 20px;
+    width: 75%;
+    background-color: transparent;
+    min-height: 350px;
+    border-radius: 24px;
+    display: grid;
+    color: #fff;
+    box-shadow: -2px -2px 4px rgba(0, 0, 0, 0.4), 2px 2px 4px rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(8px);
+}
+
+@keyframes updown {
+    0% {
+        transform: translateY(-20px);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
 }
