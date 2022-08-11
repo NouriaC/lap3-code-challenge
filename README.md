@@ -1,4 +1,4 @@
-# LAP-2-Code-Challenge
+# LAP-3-Code-Challenge
 
 ## Installation & Usage
 
